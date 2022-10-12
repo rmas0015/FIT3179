@@ -178,9 +178,9 @@ Cape Verde,CPV,2014,6.14
 Cape Verde,CPV,2016,5.86
 Cape Verde,CPV,2018,5.33
 Cape Verde,CPV,2020,7.57
-Central African Republic,CAF,2010,12.8
-Central African Republic,CAF,2014,23.86
-Central African Republic,CAF,2018,20.28
+Central African Rep.,CAF,2010,12.8
+Central African Rep.,CAF,2014,23.86
+Central African Rep.,CAF,2018,20.28
 Chad,TCD,2010,11.3
 Chad,TCD,2012,10.09
 Chad,TCD,2014,13.84
@@ -228,12 +228,12 @@ Costa Rica,CRI,2014,2.82
 Costa Rica,CRI,2016,2.68
 Costa Rica,CRI,2018,2.73
 Costa Rica,CRI,2020,3.26
-Cote d'Ivoire,CIV,2010,8.57
-Cote d'Ivoire,CIV,2012,8.13
-Cote d'Ivoire,CIV,2014,6.7
-Cote d'Ivoire,CIV,2016,5.99
-Cote d'Ivoire,CIV,2018,5.59
-Cote d'Ivoire,CIV,2020,5.35
+Côte d'Ivoire,CIV,2010,8.57
+Côte d'Ivoire,CIV,2012,8.13
+Côte d'Ivoire,CIV,2014,6.7
+Côte d'Ivoire,CIV,2016,5.99
+Côte d'Ivoire,CIV,2018,5.59
+Côte d'Ivoire,CIV,2020,5.35
 Croatia,HRV,2010,2.42
 Croatia,HRV,2012,2.58
 Croatia,HRV,2014,2.94
@@ -256,12 +256,12 @@ Czechia,CZE,2014,1.74
 Czechia,CZE,2016,1.85
 Czechia,CZE,2018,1.84
 Czechia,CZE,2020,2.07
-Democratic Republic of Congo,COD,2010,26.83
-Democratic Republic of Congo,COD,2012,22.14
-Democratic Republic of Congo,COD,2014,19.06
-Democratic Republic of Congo,COD,2016,25.31
-Democratic Republic of Congo,COD,2018,15.53
-Democratic Republic of Congo,COD,2020,11.27
+Dem. Rep. Congo,COD,2010,26.83
+Dem. Rep. Congo,COD,2012,22.14
+Dem. Rep. Congo,COD,2014,19.06
+Dem. Rep. Congo,COD,2016,25.31
+Dem. Rep. Congo,COD,2018,15.53
+Dem. Rep. Congo,COD,2020,11.27
 Denmark,DNK,2010,1.13
 Denmark,DNK,2012,1.18
 Denmark,DNK,2014,1.25
@@ -278,12 +278,12 @@ Dominica,DMA,2014,2.13
 Dominica,DMA,2016,1.96
 Dominica,DMA,2018,2.26
 Dominica,DMA,2020,2.4
-Dominican Republic,DOM,2010,5.74
-Dominican Republic,DOM,2012,5.27
-Dominican Republic,DOM,2014,5.07
-Dominican Republic,DOM,2016,4.33
-Dominican Republic,DOM,2018,4.85
-Dominican Republic,DOM,2020,7.08
+Dominican Rep.,DOM,2010,5.74
+Dominican Rep.,DOM,2012,5.27
+Dominican Rep.,DOM,2014,5.07
+Dominican Rep.,DOM,2016,4.33
+Dominican Rep.,DOM,2018,4.85
+Dominican Rep.,DOM,2020,7.08
 Ecuador,ECU,2010,3.67
 Ecuador,ECU,2012,4.59
 Ecuador,ECU,2014,4.88
@@ -621,12 +621,12 @@ Mexico,MEX,2014,3.1
 Mexico,MEX,2016,2.9
 Mexico,MEX,2018,2.68
 Mexico,MEX,2020,3.75
-Micronesia (country),FSM,2010,5.2
-Micronesia (country),FSM,2012,6.25
-Micronesia (country),FSM,2014,6.78
-Micronesia (country),FSM,2016,7.69
-Micronesia (country),FSM,2018,8.91
-Micronesia (country),FSM,2020,9.73
+Micronesia,FSM,2010,5.2
+Micronesia,FSM,2012,6.25
+Micronesia,FSM,2014,6.78
+Micronesia,FSM,2016,7.69
+Micronesia,FSM,2018,8.91
+Micronesia,FSM,2020,9.73
 Moldova,MDA,2010,3
 Moldova,MDA,2012,3.54
 Moldova,MDA,2014,3.22
@@ -1038,12 +1038,12 @@ United Kingdom,GBR,2014,2.61
 United Kingdom,GBR,2016,2.73
 United Kingdom,GBR,2018,2.91
 United Kingdom,GBR,2020,3.36
-United States,USA,2010,1.18
-United States,USA,2012,1.18
-United States,USA,2014,1.13
-United States,USA,2016,1.11
-United States,USA,2018,1.09
-United States,USA,2020,1.16
+United States of America,USA,2010,1.18
+United States of America,USA,2012,1.18
+United States of America,USA,2014,1.13
+United States of America,USA,2016,1.11
+United States of America,USA,2018,1.09
+United States of America,USA,2020,1.16
 Uruguay,URY,2010,2.94
 Uruguay,URY,2012,2.47
 Uruguay,URY,2014,2.02
