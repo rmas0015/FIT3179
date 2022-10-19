@@ -1,0 +1,68 @@
+{
+    "data": {"url": "https://raw.githubusercontent.com/rmas0015/FIT3179/main/Afford11%20(1).csv"},
+    "description": "Afforability on 2010 and 2020 for most powerful countries",
+    "title": ["Affordability (2010 to 2020)", "(percentage of GDP per capita required to purchase 2000 cigarettes of the most sold brand)"],
+    "width": 250,
+    "height": 450,
+    "transform": [
+      {
+        "filter": {
+          "field": "Year",
+          "oneOf": [2010, 2020]
+        }
+      }
+    ],
+    "encoding": {
+      "x": {
+        "field": "Affordability (percentage of GDP per capita required to purchase 2000 cigarettes of the most sold brand)",
+        "type": "quantitative",
+        "title": "Affordability"
+      },
+      "y": {
+        "field": "Entity",
+        "type": "nominal",
+        "title": "",
+        "axis": {
+          "offset": 5,
+          "ticks": false,
+          "minExtent": 70,
+          "domain": false
+        }
+      }
+    },
+    "layer": [
+      {
+        "mark": "line",
+        "encoding": {
+          "detail": {
+            "field": "Entity",
+            "type": "nominal"
+          },
+          "color": {"value": "#db646f"}
+        }
+      },
+      {
+        "mark": {
+          "type": "point",
+          "tooltip":true,
+          "filled": true
+        },
+        "encoding": {
+          "color": {
+            "field": "Year",
+            "type": "ordinal",
+            "scale": {
+              "domain": [2010, 2020],
+              "range": ["#ce20d4", "#6e156b"]
+              
+              
+            },
+            "title": "Year"
+          },
+          "size": {"value": 100},
+          "opacity": {"value": 1}
+         
+        }
+      }
+    ]
+  }

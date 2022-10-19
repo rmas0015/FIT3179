@@ -1,0 +1,37 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "description": "Smoking rate by Gender for most powerful countries",
+    "data": { "url": "https://raw.githubusercontent.com/rmas0015/FIT3179/main/Rate11.csv"},
+    "transform": [
+      {"fold": ["Male Rate","Female Rate"]}
+    ],
+    "width": 100,
+    "spacing": 60,
+    "mark": {"type":"bar","tooltip" : true},
+    
+    "encoding": {
+      "column": {
+        "field": "country", "type": "ordinal", "title":null
+      },
+      "y": {
+         "field": "value", "type": "quantitative",
+        "axis": {"title": "Smoking Rate", "grid": false}
+      },
+      "x": {
+        "field": "key", "type": "nominal",
+        "scale": {"rangeStep": 12},
+
+        "axis": {"title": "", "labelAngle": -45}
+      },
+      "color": {
+        "field": "key", "type": "nominal",
+        "scale": {"range": ["#d65a88", "#2b7eab"]},
+        "legend": null,
+        "title": ""
+      }
+    },
+    "config": {
+      "view": {"stroke": "transparent"},
+      "axis": {"domainWidth": 1}
+    }
+  }
