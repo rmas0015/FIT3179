@@ -1,37 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <title>My First HTML Document</title>
-</head>
-<body>
-    <h1>Table of Student and Grade</h1>
-    <table border="1" cellpadding = "10%">
-        <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Grade</th>
-        </tr>
+    <title>Assignment 2</title>
 
-        <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>HD</td>
-        </tr>
-        <tr>
-            <td>Jill</td>
-            <td>Jackson</td>
-            <td>D</td>
-        </tr>
-        <tr>
-            <td>Jane</td>
-            <td>Smith</td>
-            <td>C</td>
-        </tr>
-    </table>   
-    <script>
-        alert("This is a test");
-    </script>
+
+    <link rel="stylesheet" href="styles.css">
+
+     <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+</head>
+
+<body>
+    <h1>The Effects of Smoking Tobacco on the World</h1>
+    
+    <p style="vertical-align:middle;text-align:center"> Tobacco kills 8 million people every year according to the World Health Organisation, with 
+        many harmful effects including cancer, disease, decay, heart attacks and strokes.
+        This report seeks to show how smoking impacts various countries around the world. This includes the deaths caused by smoking
+        and the affordability of each cigarettes worldwide. It also compares the Australian statistics with data from the top 10 most
+        powerful countries in the world.
+    </p>
+    
+
+    <div class="single"> 
+        <h3>Smoking Death Rate (2019)  VS Affordability of cigarettes (2020)</h3>
+        <p>The red choropleth on the left illustrates the number of deaths caused by smoking for every 100,000 people
+            living in the country. For example Greenland has the highest death rate of 193.32 deaths caused by smoking per 
+            100,000 people.
+            The turquoise choropleth map displays the affordability of cigarettes in each country in which affordability is 
+            defined as the percentage of GDP required to buy 2000 of the most common brand on cigarettes in the country. [Note:
+            This map uses a logarithmic legend.]
+        </p>
+    </div>
+    
+
+    <div class="double">   
+        <div id="DeathRateMap" class="vis-container"></div>
+    </div>
+    <div class="double">
+        <div id="AffordMap" class="vis-container" ></div>   
+    </div>
+
+    <div class="single"> 
+        
+        <h3>Total number of deaths caused by the top 10 most fatal risk factors</h3>
+    </div>
+    <div class="single"> 
+        <div class="double">
+            <div class="text_left">
+            <p>
+            Smoking is the second largest killer in the world with <span style="color: #ff0000">1.25 billion deaths from 1990 to 2019 </span> with only high systolic blood pressure being ahead.
+            However these deaths are a self induced direct consequence of smoking which can be prevented. In 2019, <span style="color: ff0000">7.69 million</span> people died from smoking 
+            while <span style="color: #ff0000">1.3 million</span> deaths was caused by second hand smoke, which shows how smokers can endanger people around them.
+            </p>
+            </div>
+        </div>
+    <div class="double">   
+        <div id="DeathRisks" class="vis-container"></div>
+    </div>
+    
+    </div>
+    <div class="single"> 
+        <h3>Change in smoking death rates and cigarette affordability over time in powerful countries </h3>
+        <p> 
+            Australia is less affected by the harm caused by smoking as they have addressed the danger more effectively than the top 10 most powerful countries 
+            in the world. The line graph on the left shows the change each year in deaths per 100,000 people caused by smoking from 1990 to 2019. Australia has
+            had the lowest smoking death rate since 1999 out of those countries. This can be partially explained by the effort to reduce accessibility to cigarettes
+            by making them less afforable through an increase in taxes on tobacco. This is shown in the ranged dot plot on the right which visualises the change 
+            in percentage of GDP per capita required to purchase 2000 of the most common cigarettes from 2010 to 2020. Australia saw the largest increase in cost<span style="color: #ff0000">(1.94% increase)</span>
+            and holds the least afforable price on cigarettes <span style="color: #ff0000">(3.89%)</span>. 
+            Despite having the highest death rate caused by smoking, China is the only powerful country to have had a significanat price <span style="color: #ff0000">decrease </span> in the cost of cigarettes
+         </p>
+         <p>Use the legend on the line graph to select the country you would like to view.</p>
+    </div>
+
+    <div class="double">   
+        <div id="DeathRateVSYear" class="vis-container" ></div>
+    </div>
+    <div class="double">
+        <div id="AffordChange" class="vis-container" ></div>   
+    </div>
+    <h3>Smoking rates by gender in the top most powerful countries in 2019</h3>
+    <p>Australia had the lowest <span style="color: #ff0000">average smoking rate of 16.2% </span> compared to the other countries in 2019. A significantly larger
+        amount of men smoke cigarettes compared to women in arab and asian countries while in the western countries the rates were closer together.
+    </p>
+    <div class="single"> 
+    <div id="GenderRate" class="vis-container" ></div>
+    </div>
+
+    
+    
+
+
+    
+    <style>
+        h1 {
+        background-color: rgb(176, 196, 223);
+        padding: 2rem 2rem;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+
+        }
+        body *{
+            font-family: "Goudy Bookletter 1911", sans-serif;
+            
+            
+        }
+        body{
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+        }
+
+        p {
+            
+            font-family: Georgia, serif;
+            width:50%;
+            vertical-align:middle;
+            padding: 1rem 1rem;
+            margin: auto;
+            
+            
+        }
+        h3{
+            text-align: center;
+            vertical-align: middle;
+            padding: 1rem 1rem;
+            width: 100%;
+            background-color: rgb(176, 196, 223);
+            margin: auto;
+            
+        }
+
+
+        .vis-container {
+        width: 100%;
+        
+        }
+
+        .double {
+            margin: 2rem;
+            vertical-align: middle;
+            display: inline-block; 
+            padding: 1rem 1rem;
+        }
+        .single{
+            vertical-align: middle;
+            width: 100%;
+            text-align: center;
+            margin: auto;
+            padding: 10px;
+        }
+        .viscenter{
+            background-color: rgb(176, 196, 223);
+        
+        }
+        .text_left {
+            padding-left: 20px;
+        }
+       
+        
+
+    </style>
+    
+    <script type="text/javascript">
+        var specVis1 = "./DeathRateMap.vg.json";
+        var specVis2 = "./AffordMap.vg.json";
+
+        var specVis3 = "./DeathRisks.vg.json";
+
+        var specVis4 = "./DeathRateVSYear.vg.json";
+        var specVis5 = "./AffordChange.vg.json";
+
+        var specVis6 = "./GenderRate.vg.json";
+
+    
+        vegaEmbed('#DeathRateMap', specVis1, { "actions": false });
+    
+        vegaEmbed('#AffordMap', specVis2, { "actions": false });
+
+        vegaEmbed('#DeathRisks', specVis3, { "actions": false });
+
+        vegaEmbed('#DeathRateVSYear', specVis4, { "actions": false });
+    
+        vegaEmbed('#AffordChange', specVis5, { "actions": false });
+
+        vegaEmbed('#GenderRate', specVis6, { "actions": false });
+    
+    
+    
+      </script>
     
 </body>
 </html>

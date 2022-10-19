@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "Polar chart with displaying top 10 fatal risk factors",
+  "data": {"url": "https://raw.githubusercontent.com/rmas0015/FIT3179/main/Risks10.csv"},
+  "width":400,
+  "height":400,
+  "title":{"text": "Deaths by Risk Factor (×100,000,000)","fontSize":25, "font":"Helvetica Neue"},
+
+  "layer": [
+    {
+      "mark": {"type": "arc", "innerRadius": 20, "stroke": "#fff"}
+    },
+     
+    
+    {
+      "mark": {"type": "text", "radiusOffset": 16},
+      "encoding": {
+        "text": {"field": "Deaths (×100,000,000)", "type": "quantitative","format": ".2f"}
+      }
+    
+    }
+     ],
+  "encoding": {
+    "theta": {"field": "Deaths (×100,000,000)", "type": "quantitative", "stack": true},
+    "radius": {"field": "Deaths (×100,000,000)", "scale": {"type": "sqrt", "zero": true, "rangeMin": 20}},
+    "color": {"field": "Risk", "type": "nominal","scale": {"range": ["#191970", "#6495ED", "#1E90FF", "#00BFFF", "#008B8B", "#87CEEB", "#4169E1", "#00CED1", "#4682B4", "#d40e06"]},
+    "legend": {"labelFontSize": 9, "padding": 20}},
+    
+    "order": {"field":"Deaths (×100,000,000)"
+    }
+  
+  },
+  "view": {"stroke": null}
+}
