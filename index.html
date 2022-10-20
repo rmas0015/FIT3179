@@ -14,8 +14,11 @@
 </head>
 
 <body>
+    <div class="page">
     <h1>The Effects of Smoking Tobacco on the World</h1>
-    
+    <div class="single"> 
+    <p style="color: #696969">Raoul Mascarenhas </p>
+    </div>
     <p style="vertical-align:middle;text-align:center"> Tobacco kills <span style="color: #ff0000">8 million</span> people every year according to the World Health Organisation, with 
         many harmful effects including cancer, disease, decay, heart attacks and strokes.
         This report seeks to show how smoking impacts various countries around the world. This includes the deaths caused by smoking
@@ -37,7 +40,7 @@
     
     <div class = "wrap">
         <div class="double">   
-            <div id="DeathRateMap" class="vis-container"></div>
+            <div id="DeathRateMap" class="vis-container" ></div>
         </div>
         <div class="double">
             <div id="AffordMap" class="vis-container" ></div>   
@@ -81,7 +84,7 @@
         <div id="DeathRateVSYear" class="vis-container" ></div>
     </div>
     <div class="double">
-        <div id="AffordChange" class="vis-container" ></div>   
+        <div id="AffordChange" class="vis-container"></div>   
     </div>
     <h3>Smoking rates by gender in the top most powerful countries in 2019</h3>
     <p>Australia had the lowest <span style="color: #ff0000">average smoking rate of 16.2% </span> compared to the other countries in 2018. A significantly larger
@@ -94,7 +97,7 @@
     
     
 
-
+</div>
     
     <style>
         h1 {
@@ -163,9 +166,15 @@
             padding-left: 20px;
         }
         
-       
+        .page {
+        width: 1900px;
+        background-color: white;
+        margin: auto;
         
-
+        padding-top: 35px;
+        }
+        
+    
     </style>
     
     <script type="text/javascript">
@@ -197,4 +206,3 @@
       </script>
     
 </body>
-</html>
