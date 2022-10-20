@@ -20,8 +20,8 @@
     "bind": "legend"
   }],
   "encoding": {
-    "x": {"timeUnit": "year", "field": "Year","title":"Year"},
-    "y": {"field": "Deaths Per 100000", "type": "quantitative"},
+    "x": {"timeUnit": "year", "field": "Year","title":"Year","axis":  {"grid":false}},
+    "y": {"field": "Deaths Per 100000", "type": "quantitative","axis":  {"grid":false}},
     "color": {"field": "Entity", "type": "nominal",
     "scale": {"range": ["#d65a88", "#cf5151", "#eb7734", "#ccac39", "#c2cc39", "#8fcc39", "#12781a", "#12784c", "#38cfae", "#2b7eab","#2b40ab" ]}
 
