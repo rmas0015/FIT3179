@@ -14,19 +14,23 @@
     
     {
       "mark": {"type": "text", "radiusOffset": 16},
+      
       "encoding": {
         "text": {"field": "Deaths (×100,000,000)", "type": "quantitative","format": ".2f"}
-      }
+      } 
     
     }
      ],
+    
   "encoding": {
     "theta": {"field": "Deaths (×100,000,000)", "type": "quantitative", "stack": true},
     "radius": {"field": "Deaths (×100,000,000)", "scale": {"type": "sqrt", "zero": true, "rangeMin": 20}},
     "color": {"field": "Risk", "type": "nominal","scale": {"range": ["#191970", "#6495ED", "#1E90FF", "#00BFFF", "#008B8B", "#87CEEB", "#4169E1", "#00CED1", "#4682B4", "#d40e06"]},
     "legend": {"labelFontSize": 9, "padding": 20}},
-    
-    "order": {"field":"Deaths (×100,000,000)"
+    "tooltip": [
+      {"field": "Risk", "type": "nominal", "title": "Risk"},
+      {"field": "Deaths (×100,000,000)", "type": "quantitative","title": "Deaths (×100,000,000)","format": ".2f"}],
+      "order": {"field":"Deaths (×100,000,000)"
     }
   
   },
